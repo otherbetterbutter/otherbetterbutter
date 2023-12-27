@@ -1,0 +1,114 @@
+body {
+  font-family: 'Circular', sans-serif; 
+  color: white;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding-left: 10%;
+}
+
+.logo {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  height: 50px;
+  width: auto;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.greeting {
+  font-size: 5em;
+}
+
+.introduction {
+  font-size: 1.5em;
+}
+
+.say-hi-button {
+  padding: 15px 20px;
+  margin-top: 20px;
+  border: 1px solid white;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 60px;
+}
+
+/* Section (2) grid layout for folders */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  grid-template-rows: repeat(2, 1fr); /* 2 rows */
+  grid-gap: 50px; /* Space between the folders */
+  padding: 100px;
+}
+
+.folder-outline {
+  border: 3px solid white;
+  border-radius: 0 10px 10px 10px;
+  background-color: transparent;
+  position: relative;
+  aspect-ratio: 3 / 2; /* Keep a consistent aspect ratio */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.folder-outline::before {
+  content: '';
+  width: 50px;
+  height: 20px;
+  border: 3px solid white;
+  border-bottom: none;
+  border-radius: 0 10px 0 0;
+  position: absolute;
+  top: -23px;
+  left: -3px;
+  background-color: transparent;
+}
+
+.folder-outline {
+  /* Existing styles */
+  background: rgba(255, 255, 255, 0.1); /* Slightly opaque background */
+  transition: background 0.3s ease, backdrop-filter 0.3s ease;
+  position: relative;
+}
+
+.folder-outline:hover {
+  background: rgba(255, 255, 255, 0.3); /* More opacity on hover */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  overflow: hidden;
+}
+
+.folder-outline:hover::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url('path/to/noise-texture.png'); /* Noise texture */
+  opacity: 0.5; /* Adjust as needed */
+}
+
+
+.folder-text {
+  position: absolute;
+  padding: 15px;
+  top: 3px; /* Position from the top of the folder */
+  left: 3px; /* Position from the left side of the folder */
+  font-family: 'Arial', sans-serif; /* Arial as a placeholder for 'Circular' */
+  color: white;
+  font-size: 27px;
+  font-weight: bolder;
+}
+

@@ -1,0 +1,73 @@
+/* styles.css */
+body {
+  font-family: 'Circular', sans-serif;
+  color: white;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1, h3 {
+  color: white;
+  margin: 0;
+  padding: 0 0 10px 0;
+}
+
+h3{
+  padding-top: 15px;
+}
+
+h2 {
+  font-weight: lighter;
+  color: white;
+    padding: 6px 20px;
+    border: 1px solid white;
+    border-radius: 60px;
+    font-style: italic;
+    display: inline-block;
+    font-size: 1em;
+    margin: 5;
+}
+
+.logo {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    height: 50px;
+    width: auto;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+a { /* Remove underline from all links */
+  text-decoration: none;
+}
+
+
+p {
+  color: white;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.watch-video {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 50px;
+  border: 2px solid white;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.watch-video:hover {
+  background-color: grey;
+}

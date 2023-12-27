@@ -1,0 +1,112 @@
+
+body {
+  font-family: 'Circular', sans-serif;
+  color: white;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fullproject-content {
+  display: flex;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.description-group {
+  /* No need to use flex here unless you have multiple items you want to align horizontally */
+  margin-top: 20px;
+  width: 40%; /* This will ensure it takes the full width */
+}
+
+.project-content {
+  width: 100%; /* This will ensure it takes the full width */
+}
+
+.description-group2 {
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 5%;
+
+
+}
+
+.logo {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  height: 50px; /* Fixed height is okay since it's relatively small */
+  width: auto;
+}
+
+body {
+  font-family: 'Circular', sans-serif;
+  color: white;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  /* Removed flex styles that center everything, which could contribute to horizontal scrolling */
+}
+
+
+/* Other styles */
+
+.video-content {
+  width: 100%; /* Take the full width of the container */
+  max-width: 960px; /* Maximum width */
+  margin: 0 auto; /* Center the video within the container */
+}
+
+.video-content video {
+  width: 100%; /* Make the video responsive */
+  height: auto; /* Maintain aspect ratio */
+  border: 1px solid white; /* Adds a white border around the video container */
+  margin-top: 5%;
+
+}
+
+
+.project-content h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.project-content h2 {
+    font-size: 2em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.project-content p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+.subtitle {
+  margin-top: -10px;
+  padding: 6px 20px;
+  border: 1px solid white;
+  display: inline-block;
+  border-radius: 60px;
+  font-style: italic;
+}
+
+.imgs-wrapper {
+  width: 100%; /* Ensures the wrapper takes the full width of its parent */
+  margin: auto; /* Center the wrapper if needed */
+}
+
+.imgs-wrapper img {
+  display: block; /* Makes the images block-level elements */
+  width: 120%; /* Each image takes the full width of the wrapper */
+  max-width: 960px; /* Optional: Constrain images to a maximum width */
+  height: auto; /* Maintains the aspect ratio */
+  margin: 20px auto; /* Adds space above and below each image and centers them horizontally */
+}
+
+

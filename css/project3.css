@@ -1,0 +1,119 @@
+.logo {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    height: 50px;
+    width: auto;
+}
+
+body {
+  font-family: 'Circular', sans-serif;
+  color: white;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  /* Removed flexbox styles from body */
+}
+
+.fullproject-content {
+  /* Adjusted styles for fullproject-content */
+  max-width: 100%; /* Adjust the width as needed */
+  margin: 40px auto; /* Centers the content with automatic margins on both sides */
+}
+
+.design-image {
+  display: block; /* Makes the image a block-level element */
+  max-width: 80%; /* Limits the width to 80% of its container */
+  height: auto; /* Keeps the aspect ratio of the image */
+  margin: 20px auto; /* Adds top and bottom margin and centers the image horizontally */
+  margin-left: 20%;
+
+}
+
+.fullproject-content {
+  display: flex;
+  margin-top: 5%;
+  margin-left: 25% ;
+  margin-right: 25%;
+}
+
+
+.description-group {
+    display: flex;
+    margin-top: 10px;
+    padding-left: 30%;
+    align-items: center;
+
+}
+
+/*.project-content {
+    width: 50%;
+}
+*/
+.project-content h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.project-content h2 {
+    font-size: 2em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.project-content p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+.subtitle {
+  margin-top: -10px;
+  padding: 6px 20px;
+  border: 1px solid white;
+  display: inline-block;
+  border-radius: 60px;
+  font-style: italic;
+}
+
+
+/*section 2 */
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.toggle-button {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  cursor: pointer;
+  outline: none; /* Removes the outline to keep the style clean */
+}
+
+.toggle-button:hover, .toggle-button.active {
+  background-color: grey;
+  border-color: grey; /* Optional: makes the border the same color as the background */
+}
+
+/* ... existing styles ... */
+
+.video-container {
+  text-align: center; /* Center the video elements */
+}
+
+.video {
+  width: 90%; /* Adjust the width as necessary */
+  max-width: 64%; /* Set a maximum width */
+  height: auto; /* Maintain aspect ratio */
+  margin: 20px auto; /* Add some space and center the video */
+}
+
+/* Additional styles to make the active button stand out */
+.toggle-button.active {
+  background-color: grey;
+  border-color: grey;
+}

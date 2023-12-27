@@ -1,0 +1,110 @@
+body, h1, button, p {
+    margin-top: 0;
+    padding: 0;
+    font-family: Circular, sans-serif;
+    background-color: black;
+    color: white;
+    line-height: 1.6;
+}
+
+.logo {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    height: 50px;
+    width: auto;
+}
+
+.container {
+    width: 55%; 
+    margin: 0 auto; /* Centers the container */
+    padding-top: 5%;
+}
+
+header {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+#GraphicDesign {
+    padding: 6px 20px;
+    border: 1px solid white;
+    border-radius: 60px;
+    font-style: italic;
+    display: inline-block;
+}
+
+.text-content {
+    padding-bottom: 20px;
+    font-size: 1em;
+    line-height: 1.6em;
+    width: 60%;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-content img {
+    max-width: 100%; 
+  
+    padding-left: 0%;
+}
+
+header p {
+  padding-top: 5%;
+    max-width: 80%;
+
+}
+
+#process {
+    padding-top: 30px;
+    max-width: 60%;
+}
+
+#process h2 {
+    font-size: 1.8em;
+    color: white; /* Changed to white to be visible on the black background */
+/*    padding-top: 33%;*/
+}
+
+#container p {
+    font-size: 1em;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* creates 4 columns */
+    grid-gap: 10px; /* spacing between images */
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+#gallery img {
+    width: 100%;
+     height: auto; 
+}
+
+/* Add responsive design for smaller screens */
+@media (max-width: 768px) {
+    .header-content, #process, #gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-content, .image-content, #process p {
+        width: 100%;
+    }
+    .image-content img, #gallery img {
+        max-width: 80%;
+        margin: 0 auto; /* Centers the image */
+    }
+    #gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+    }
+}
