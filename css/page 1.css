@@ -25,6 +25,7 @@ body {
 
 .container {
   max-width: 1200px;
+  margin: 3%;
 }
 
 .greeting {
@@ -32,17 +33,11 @@ body {
 }
 
 .introduction {
-  font-size: 1.5em;
+  font-size: 1.3em;
+  font-weight: lighter;
+
 }
 
-.say-hi-button {
-  padding: 15px 20px;
-  margin-top: 20px;
-  border: 1px solid white;
-  display: inline-block;
-  cursor: pointer;
-  border-radius: 60px;
-}
 
 /* Section (2) grid layout for folders */
 .grid-container {
@@ -50,7 +45,8 @@ body {
   grid-template-columns: repeat(4, 1fr); /* 4 columns */
   grid-template-rows: repeat(2, 1fr); /* 2 rows */
   grid-gap: 50px; /* Space between the folders */
-  padding: 100px;
+  padding: 50px;
+  width: 80%;
 }
 
 .folder-outline {

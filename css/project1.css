@@ -54,20 +54,12 @@ body {
 
 
 /* Other styles */
-
 .video-content {
   width: 100%; /* Take the full width of the container */
   max-width: 960px; /* Maximum width */
   margin: 0 auto; /* Center the video within the container */
 }
 
-.video-content video {
-  width: 100%; /* Make the video responsive */
-  height: auto; /* Maintain aspect ratio */
-  border: 1px solid white; /* Adds a white border around the video container */
-  margin-top: 5%;
-
-}
 
 
 .project-content h1 {
